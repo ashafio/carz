@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('../imgs/sven-d-a4S6KUuLeoM-unsplash.jpg');
+      background-size: cover;
+      background-position: center center;
+      height: 100vh;
+    }
+    
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      margin: 100px auto;
+      max-width: 400px;
+      padding: 30px;
+      text-align: center;
+    }
+    
+    h2 {
+      color: #222;
+      margin-bottom: 30px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      border-radius: 3px;
+      border: none;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    input[type="submit"] {
+      background-color: #222;
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      cursor: pointer;
+      padding: 10px 20px;
+      transition: background-color 0.3s;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Sign Up</h2>
+    <form action="" method="post">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Sign Up">
+    </form>
+    <p>Already have an account? <a href="login.html" target="_blank">Log in</a></p>
+  </div>
+</body>
+</html>

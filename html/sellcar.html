@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Listing Form</title>
+  <style>
+    body {
+      background-image: url('../imgs/evgeny-tchebotarev-aiwuLjLPFnU-unsplash.jpg');
+      background-size: cover;
+      background-position: center center;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+    }
+    
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      margin: 100px auto;
+      max-width: 600px;
+      padding: 30px;
+      text-align: center;
+    }
+    
+    h2 {
+      color: #222;
+      margin-bottom: 30px;
+    }
+    
+    input[type="text"],
+    input[type="number"] {
+      border-radius: 3px;
+      border: none;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    input[type="file"] {
+      display: none;
+    }
+    
+    .custom-file-upload {
+      background-color: #222;
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      cursor: pointer;
+      padding: 10px 20px;
+      transition: background-color 0.3s;
+      margin-bottom: 20px;
+    }
+    
+    .custom-file-upload:hover {
+      background-color: #444;
+    }
+    
+    input[type="submit"] {
+      background-color: #222;
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      cursor: pointer;
+      padding: 10px 20px;
+      transition: background-color 0.3s;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>List Your Car</h2>
+    <form action="" method="post">
+      <input type="text" name="car_model" placeholder="Car Model" required>
+      <input type="text" name="car_description" placeholder="Car Description" required>
+      <input type="number" name="asking_price" placeholder="Asking Price" required>
+      <label for="car_image" class="custom-file-upload">Upload Image</label>
+      <input type="file" name="car_image" id="car_image">
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
